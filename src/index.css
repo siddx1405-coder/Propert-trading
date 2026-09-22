@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0f172a;
+  --color-brand-gray: #1e293b;
+  --color-brand-gold: #fbbf24;
+  --color-brand-accent: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* Fallback styling to enforce layout containment on media */
+img, video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
