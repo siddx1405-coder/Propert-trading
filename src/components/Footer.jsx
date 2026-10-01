@@ -52,8 +52,31 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} {clientData.companyName}. All rights reserved.
+      {/* Bottom Copyright & Credits */}
+      <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <p>© {new Date().getFullYear()} {clientData.companyName}. All rights reserved.</p>
+        
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <span>Made by <strong className="text-gray-200">@Xenosys Qatar</strong></span>
+          <span>•</span>
+          <a 
+            href="https://xenosysweb.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-brand-gold hover:underline transition"
+          >
+            Xenosysweb.com
+          </a>
+          <span>•</span>
+          <a 
+            href="https://wa.me/97470643918" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-emerald-400 hover:text-emerald-300 transition"
+          >
+            WhatsApp 7064 3918
+          </a>
+        </div>
       </div>
     </footer>
   );
