@@ -4,6 +4,7 @@ import { clientData } from '../data/clientData';
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${clientData.phone1.replace(/[^0-9]/g, '')}`;
+  const crNumber = clientData.crNo || '178002';
 
   return (
     <section className="relative bg-slate-950 text-white pt-20 pb-24 px-4 overflow-hidden">
@@ -15,7 +16,7 @@ export default function Hero() {
         {/* Left Column - Headline & Actions */}
         <div className="flex-1 space-y-6 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-amber-400/10 text-amber-400 border border-amber-400/30 rounded-full text-xs md:text-sm font-semibold backdrop-blur-sm">
-            <Shield size={16} /> Licensed Contracting W.L.L in Doha, Qatar
+            <Shield size={16} /> Licensed Contracting W.L.L in Doha, Qatar • CR No: {crNumber}
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
